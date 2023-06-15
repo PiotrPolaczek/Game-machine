@@ -1,0 +1,35 @@
+import random
+losowa_liczba_calkowita1 = None
+losowa_liczba_calkowita2 = None
+losowa_liczba_calkowita3 = 1
+
+a1 = input("losujesz? ")
+if a1== "yes":
+    a = 1
+    b = 10
+    losowa_liczba_calkowita1 = random.randint(a, b)
+    print(losowa_liczba_calkowita1)
+else: print("You don't want to draw")
+
+a2 = input("losujesz? ")
+if a2== "yes":
+    a = 1
+    b = 10
+    losowa_liczba_calkowita2 = random.randint(a, b)
+    print(losowa_liczba_calkowita2)
+else: print("You don't want to draw")
+
+
+a3 = input("losujesz? ")
+if a3== "yes":
+    a = 1
+    b = 10
+    losowa_liczba_calkowita3 = random.randint(a, b)
+    print(losowa_liczba_calkowita3)
+else: print("You don't want to draw")
+
+
+if losowa_liczba_calkowita2 == losowa_liczba_calkowita1 and losowa_liczba_calkowita3 == losowa_liczba_calkowita1:
+    print("You won, all the numbers are the same")
+else:
+    print("You lost")
